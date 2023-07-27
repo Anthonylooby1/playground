@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Flask</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome!</h1>
+    <div style="width: 800px; height: 600px; border: black solid 3px; margin:0 auto; display: flex; align-items: center; justify-content: space-around;">
+        <!-- <div style="width: 200px; height: 200px; background-color: aquamarine;" class="{{num}}"></div>
+        <div style="width: 200px; height: 200px; background-color: aquamarine;" class="{{num}}"></div>
+        <div style="width: 200px; height: 200px; background-color: aquamarine; " class="{{num}}"></div> -->
+        {% for i in range(0,num)%}
+        <p><div style="width: 200px; height: 200px; background-color: {{color}}; margin: 10px;"></div></p>
+    {%endfor%} 
+    
+    </div>
+</body>
+</html>
